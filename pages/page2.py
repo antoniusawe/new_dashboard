@@ -59,8 +59,8 @@ def show(ryp_200hr_data, ryp_300hr_data):
     # Tambahkan radio button untuk memilih tampilan
     selected_view = st.radio("View Data", ["Booking", "Payable"], horizontal=True)
 
-    # # Tampilkan data berdasarkan pilihan radio button
-    # if selected_view == "Booking":
-    #     booking_ryp.show_booking(ryp_data, program_choice)
-    # elif selected_view == "Payable":
-    #     payable_ryp.show_payable(ryp_data, program_choice)
+    # Tampilkan data berdasarkan pilihan radio button
+    if selected_view == "Booking":
+        booking_ryp.show_booking(ryp_data, program_choice)
+    elif selected_view == "Payable":
+        payable_ryp.show_payable(ryp_data, program_choice)
