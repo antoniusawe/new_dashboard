@@ -1,8 +1,8 @@
 import streamlit as st
 import pandas as pd
-import pages.overview as overview  # Import file overview
-import pages.location as location  # Import file location
-import pages.batch as batch  # Import file location
+# import pages.overview as overview  # Import file overview
+# import pages.location as location  # Import file location
+# import pages.batch as batch  # Import file location
 
 def show(occupancy_data, sales_data):
     # Radio button untuk memilih program
@@ -38,11 +38,11 @@ def show(occupancy_data, sales_data):
     # Menampilkan pilihan halaman (Overview, Location, Batch)
     view_choice = st.radio("Select Analysis:", ["Overview", "Location", "Batch"], horizontal=True, key="view_choice")
 
-    # Menampilkan konten berdasarkan pilihan tampilan
-    if view_choice == "Overview":
-        overview.show_overview(filtered_occupancy_data, filtered_sales_data)
-    elif view_choice == "Location":
-        # Pastikan bahwa program_choice, selected_year, dan selected_month diteruskan ke show_location
-        location.show_location(filtered_occupancy_data, filtered_sales_data, program_choice, selected_year, selected_month)
-    elif view_choice == "Batch":
-        batch.show_batch(filtered_sales_data, program_choice, selected_year, selected_month)
+    # # Menampilkan konten berdasarkan pilihan tampilan
+    # if view_choice == "Overview":
+    #     overview.show_overview(filtered_occupancy_data, filtered_sales_data)
+    # elif view_choice == "Location":
+    #     # Pastikan bahwa program_choice, selected_year, dan selected_month diteruskan ke show_location
+    #     location.show_location(filtered_occupancy_data, filtered_sales_data, program_choice, selected_year, selected_month)
+    # elif view_choice == "Batch":
+    #     batch.show_batch(filtered_sales_data, program_choice, selected_year, selected_month)
