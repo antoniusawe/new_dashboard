@@ -1,8 +1,8 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-# import pages.booking_ryp as booking_ryp
-# import pages.payable_ryp as payable_ryp
+import pages.booking_ryp as booking_ryp
+import pages.payable_ryp as payable_ryp
 
 def show(ryp_200hr_data, ryp_300hr_data):
     st.header("RYP Student Database Analysis")
