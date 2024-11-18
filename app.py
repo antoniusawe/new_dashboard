@@ -10,10 +10,10 @@ st.title("Sales Dashboard & Occupancy")
 
 # Membaca data dari file Excel
 try:
-    occupancy_data = pd.read_excel("https://github.com/antoniusawe/new_dashboard/blob/main/data/bali_occupancy.xlsx")
-    sales_data = pd.read_excel("https://github.com/antoniusawe/new_dashboard/blob/main/data/bali_sales.xlsx")
-    ryp_200hr_data = pd.read_excel("https://github.com/antoniusawe/new_dashboard/blob/main/data/ryp_student_database_200hr.xlsx")
-    ryp_300hr_data = pd.read_excel("https://github.com/antoniusawe/new_dashboard/blob/main/data/ryp_student_database_300hr.xlsx")
+    occupancy_data = pd.read_excel("https://raw.githubusercontent.com/antoniusawe/new_dashboard/main/data/bali_occupancy.xlsx")
+    sales_data = pd.read_excel("https://raw.githubusercontent.com/antoniusawe/new_dashboard/main/data/bali_sales.xlsx")
+    ryp_200hr_data = pd.read_excel("https://raw.githubusercontent.com/antoniusawe/new_dashboard/main/data/ryp_student_database_200hr.xlsx")
+    ryp_300hr_data = pd.read_excel("https://raw.githubusercontent.com/antoniusawe/new_dashboard/main/data/ryp_student_database_300hr.xlsx")
     st.success("© 2024 House of Om")
 except Exception as e:
     st.error(f"Terjadi kesalahan saat memuat data: {e}")
